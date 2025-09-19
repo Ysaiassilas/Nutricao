@@ -1,0 +1,135 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* Container principal dividido */
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Metade esquerda */
+.left-panel {
+  flex: 1;
+  background: #555551; /* cinza */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.left-panel h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.left-panel .sub {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* Metade direita */
+.right-panel {
+  flex: 1;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Caixa de login */
+.login-box {
+  background: #eeeeee;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 350px;
+}
+
+.logo {
+  max-width: 300px;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Tabs */
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px 0;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 8px;
+  margin: 0 5px;
+  background: #ddd;
+  color: #333;
+  transition: 0.3s;
+}
+
+.tab.active {
+  background: #555551;
+  color: white;
+}
+
+/* Inputs */
+input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  background: #555551;
+  color: white;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: #ddd;
+}
+
+/* Botão enviar */
+.submit {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #555551;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.submit:hover {
+  background: #333;
+}
+
+.form {
+  display: none;
+}
+
+.form.active {
+  display: block;
+}
